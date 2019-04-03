@@ -2,7 +2,7 @@ language: ruby
 rvm:
   - 2.3.7
 
-install: gem install jekyll -v 3.8.5 && gem install s3_website
+install: gem install s3_website
 script: bundle exec jekyll build
 
 deploy:
