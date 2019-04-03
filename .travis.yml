@@ -1,0 +1,16 @@
+language: ruby
+rvm:
+  - 2.1
+
+install: gem install jekyll -v 2.4.0 && gem install s3_website
+script: jekyll build
+
+deploy:
+  provider: s3
+  access_key_id: $AWS_KEY
+  secret_access_key: $AWS_SECRET
+  bucket: "aws:s3:::javahippie.net"
+  skip_cleanup: false
+  local_dir: _site
+  on:
+    branch: master
