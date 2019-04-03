@@ -3,7 +3,7 @@ rvm:
   - 2.3.7
 
 install: gem install s3_website
-script: bundle exec jekyll build
+script: bundle install && bundle exec jekyll build
 
 deploy:
   provider: s3
