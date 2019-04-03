@@ -10,7 +10,7 @@ deploy:
   access_key_id: $AWS_KEY
   secret_access_key: $AWS_SECRET
   bucket: "aws:s3:::javahippie.net"
-  skip_cleanup: false
+  skip_cleanup: true
   local_dir: ./_site
   on:
     branch: master
