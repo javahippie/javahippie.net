@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cloudready Clojure Part 3"
-date:   2020-04-22 12:00:00 +0200
+date:   2020-05-04 12:00:00 +0200
 categories: clojure cloud
 ---
 
