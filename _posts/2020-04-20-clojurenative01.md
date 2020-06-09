@@ -2,7 +2,9 @@
 layout: post
 title:  "Cloudready Clojure Part 1"
 date:   2020-04-20 12:00:00 +0200
+author: Tim Zöller
 categories: clojure cloud
+background: /assets/cairns.jpeg
 ---
 
 One of my resolutions for the year was to stop using Clojure and to focus more on technology I can use for my daily business at work. I even skipped :clojureD 2020, because I was determined to explore different technologies. Well, I failed. I started a small pet project in Clojure, again (and I hope I can share it with you in some time), and I am guilty of having lots of fun working on it. On of the pet projects goals was to write a "Cloud Ready" application, which can be deployed to several cloud providers without much adjustment and without manual configuration. In this blog series, I want to outline some of the steps I took, libraries I used and results I achieved with it. 

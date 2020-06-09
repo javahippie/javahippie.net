@@ -2,7 +2,9 @@
 layout: post
 title:  "Running Camunda on GraalVM Native Image"
 date:   2020-05-31 12:00:00 +0200
+author: Tim Zöller
 categories: java graal-vm native-image camunda 
+background: /assets/perth2.jpeg
 ---
 
 Some months ago I posted a [blog entry](https://javahippie.net/java/microprofile/quarkus/camunda/cdi/2020/02/07/camundaquarkus.html) about the struggles I had running Camunda on Quarkus. What was meant as a summary of my experiences lead to [intense discussions](https://groups.google.com/forum/#!topic/microprofile/Rg4MPG4E6J4) in the MicroProfile community, which distracted from the Camunda part of the article. As I never intended to use Camunda on GraalVMs Native Image, anyways, I did not try to run the combination again - until now. Thanks to Oliver Libutzki for sparking my interest here again with this tweet 😉

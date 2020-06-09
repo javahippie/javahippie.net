@@ -2,7 +2,9 @@
 layout: post
 title:  "Thoughts on Enterprise Software"
 date:   2020-02-26 10:00:00 +0200
+author: Tim Zöller
 categories: [software, business]
+background: /assets/brisbane.jpeg
 ---
 
 I had some interesting discussions about the term "enterprise software" lately, both online and offline. In the following post I try to sort and write down some of my thoughts and opinions on that topic. Your thoughts and opinions might differ, of course. If they do, ping me on [Twitter](https://twitter.com/javahippie) or [LinkedIn](https://www.linkedin.com/in/timzoeller/), I would love to hear them! 
