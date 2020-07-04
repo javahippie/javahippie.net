@@ -73,7 +73,7 @@ The functions accept and return a map structure, which enables us to operate the
     (let [pw "db-pass"
           postgres (-> (tc/create {:image-name "postgres:12.1" 
                                    :exposed-ports [5432] 
-                                   :env-vars {"POSTGRES_PASSWORD" "verysecret"}}))]
+                                   :env-vars {"POSTGRES_PASSWORD" pw}}))]
       (tc/start! postgres)
       (let [datasource (jdbc/get-datasource {:dbtype "postgresql"
                                              :dbname "postgres"
