@@ -10,6 +10,8 @@ script:
   - mv _site/about.html _site/about/index.html 
   - mkdir _site/contact 
   - mv _site/contact.html _site/contact/index.html
+  - mkdir _site/talks
+  - mv _site/talks.html _site/talks/index.html
 
 deploy:
   provider: s3
