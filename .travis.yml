@@ -7,9 +7,9 @@ script:
   - bundle install 
   - bundle exec jekyll build 
   - mkdir _site/about 
-  - mv about.html _site/about/index.html 
+  - mv _site/about.html _site/about/index.html 
   - mkdir _site/contact 
-  - mv contact.html _site/contact/index.html
+  - mv _site/contact.html _site/contact/index.html
 
 deploy:
   provider: s3
