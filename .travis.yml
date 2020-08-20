@@ -3,7 +3,13 @@ rvm:
   - 2.7.0
 
 install: gem install s3_website
-script: bundle install && bundle exec jekyll build && mkdir about && mv about.html about/index.html && mkdir contact && mv contact.html contact/index.html
+script: 
+  - bundle install 
+  - bundle exec jekyll build 
+  - mkdir _site/about 
+  - mv about.html _site/about/index.html 
+  - mkdir _site/contact 
+  - mv contact.html _site/contact/index.html
 
 deploy:
   provider: s3
