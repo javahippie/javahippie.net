@@ -70,10 +70,10 @@ The database is quickly created. We click on its name, and are redirected to dat
 
 ```clojure
 {:dbtype "postgresql"
- :host "ec2-54-75-229-28.eu-west-1.compute.amazonaws.com" 
- :user "srtddtwbgfbckq" 
- :password "020bf47393416203f709e0747b53108b6c04f982488f52126b823611fb8c4640" 
- :dbname "d1komr743mo9rj"}
+ :host "ec2-54***************.amazonaws.com" 
+ :user "srt******ckq" 
+ :password "020bf473934****************52126b823611fb8c4640" 
+ :dbname "d1ko********o9rj"}
 ```
 
 We restart the application via the top-right menu "More" -> "Restart all Dynos", and now, the logs look much more promising. We see our migratus output, and also, finnally, the following message: `2020-08-23T19:28:41.716277+00:00 heroku[web.1]: State changed from starting to up`. A click on the button "Open app" in the top right corner shows our applications welcome screen. We are live! 💪🤘
