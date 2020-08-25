@@ -25,12 +25,22 @@
             </a>
           </li>
           {% endif %}
-          {% if site.facebook_username %}
+          {% if site.github_username %}
           <li class="list-inline-item">
-            <a href="https://www.facebook.com/{{ site.facebook_username }}">
+            <a href="https://github.com/{{ site.github_username }}">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.twitch_username %}
+          <li class="list-inline-item">
+            <a href="https://www.twitch.tv/{{ site.twitch_username }}">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
@@ -43,14 +53,14 @@
                 <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
               </span>
             </a>
-          </li>
+          </li> 
           {% endif %}
-          {% if site.github_username %}
+          {% if site.xing_username %}
           <li class="list-inline-item">
-            <a href="https://github.com/{{ site.github_username }}">
+            <a href="https://www.xing.com/profile/{{ site.xing_username }}">
               <span class="fa-stack fa-lg">
                 <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                <i class="fab fa-xing fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
