@@ -2,6 +2,26 @@
  max-width: 90%;
 }
 
+table td, table th {
+ border-left: 1px solid grey;
+ border-right: 1px solid grey;
+ padding-right: 12px;
+ padding-left: 12px;
+ padding-bottom: 12px;
+}
+
+table th {
+ border-bottom: 1px solid grey;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table {
+  margin: 24px;
+}
+
 .highlight .hll { background-color: #FFFFFF }
 .highlight  { background: #FFFFFF; color: #002b36 }
 .highlight .c { color: #839496 } /* Comment */
