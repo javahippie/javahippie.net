@@ -46,13 +46,13 @@ CREATE SEQUENCE seq_nobel_prize
 
 CREATE TABLE nobel_prize (
 	id       NUMBER(19) DEFAULT seq_nobel_prize.nextval NOT NULL,
-	document CLOB                                       NOT NULL,
+	document BLOB                                       NOT NULL,
 	
 	CONSTRAINT pk_nobel_prize   PRIMARY KEY (id),
 	CONSTRAINT document_is_json CHECK       (document IS JSON (STRICT))
 ) LOB (document) STORE AS SECUREFILE;
 ```
-As explained above, we chose to store the JSON in a `CLOB` field as `SECUREFILE` to optimize storage and access. We also apply an `IS JSON` check to the column, which checks for strict syntax. We also added a primary key column to the table which is filled by `seq_nobel_prizes`.
+As explained above, we chose to store the JSON in a `BLOB` field as `SECUREFILE` to optimize storage and access. We also apply an `IS JSON` check to the column, which checks for strict syntax. We also added a primary key column to the table which is filled by `seq_nobel_prizes`.
 
 
 ## Inserting and test data
