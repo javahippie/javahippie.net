@@ -107,7 +107,7 @@ Finally, let's see how everything works. We quickly set up three functions to te
 
 It worked! We see the example function and the plus function in honeycomb, but not the minus function:
 
-![](/assets/20210529/honey.png)
+![Full trace view with hierarchy](/assets/20210529/honey.png)
 
 
 ## What next?
