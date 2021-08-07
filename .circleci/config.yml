@@ -9,6 +9,8 @@ jobs:
     executor: ruby/default
     steps:
       - checkout
+      - ruby/install-deps:
+          key: {{ checksum "Gemfile" }}
       - run:
           name: Build
           command: bundle bundle exec jekyll build
