@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   ruby: circleci/ruby@1.1.4
+  aws-s3: circleci/aws-s3@3.0
 
 jobs:
   build:
@@ -17,3 +18,6 @@ jobs:
       - run:
           name: Proof
           command: bundle exec htmlproofer ./_site --check-html --disable-external  --allow_hash_href
+      - aws-s3/sync:
+          from: ./_site
+          to: 's3://javahippie-net'
