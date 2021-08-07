@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       - ruby/install-deps:
-          key: {{ checksum "Gemfile" }}
+          key: ruby-cache-{{checksum "Gemfile"}}
       - run:
           name: Build
           command: bundle bundle exec jekyll build
