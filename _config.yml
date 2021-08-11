@@ -18,7 +18,7 @@ email: zoeller@hey.com
 description: The Java Hippie
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://javahippie.net" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: javahippie
+#twitter_username: javahippie
 github_username:  javahippie
 linkedin_username: timzoeller
 twitch_username: javahippie
