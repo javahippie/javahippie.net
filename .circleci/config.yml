@@ -16,15 +16,6 @@ jobs:
       - run:
           name: Proof
           command: bundle exec htmlproofer ./_site --check-html --disable-external  --allow_hash_href
-  deploy:
-    executor: ruby/default
-    steps:
-      - checkout
-      - ruby/install-deps:
-          key: ruby-cache-{{checksum "Gemfile"}}
-      - run:
-          name: Build
-          command: bundle exec jekyll build
       - aws-s3/sync:
           from: ./_site
           to: 's3://javahippie-net'
@@ -32,10 +23,7 @@ jobs:
 workflows:
   test-build:
     jobs:
-      - build
-      - deploy:
-          requires:
-            - build
+      - build:
           filters:
             branches:
               only:
