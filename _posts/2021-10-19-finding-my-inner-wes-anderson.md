@@ -83,7 +83,7 @@ limit 1"])
 That's all about SQL, that's the whole code. No other setup needed. If executed in a script from the command line (`bb ./my-file.clj`), this returns almost immediately. No JVM startup, no Clojure init time. 
 
 ### AppleScript
-Of course, I could simply use Selmer (which is supported by babashka) as a templating engine, store the AppleScript code as a String and replace the UUID I want. But where is the fun in that? I wondered, if I could write some kind of primitive DDL for that, so I did not need another dependency. And I could – in a way:
+Of course, I could simply use Selmer (which is supported by babashka) as a templating engine, store the AppleScript code as a String and replace the UUID I want. But where is the fun in that? I wondered, if I could write some kind of primitive DSL for that, so I did not need another dependency. And I could – in a way:
 
 ```clojure
 (def applescript '[tell application :photos \newline
