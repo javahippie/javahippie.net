@@ -180,3 +180,8 @@ course, not only restricted to databases: We could boot up Brokers, Queues, HTTP
 dockerize them and have sufficient memory on our machine. As soon as we start the REPL, everything will get started
 along with every devloper having the same configuration. This would get rid of setting all these infra components up
 locally. Of course we can still use Testcontainers in our integration-tests on top. 
+
+## Test it!
+
+You can check out the code [here](https://github.com/javahippie/tc-demo). If you have Docker installed, it should work
+out of the box for you!
