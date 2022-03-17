@@ -63,7 +63,7 @@ Having Docker installed on the machine is (for now) a requirement for using Test
 ## Creating Profile-Specific configurations
 
 Luminus uses [mount](https://github.com/tolitius/mount) for application state management. With mount we can define
-different stateful components of our application and makes sure they start in the right order, to consider dependencies
+different stateful components of our application and make sure they start in the right order, to consider dependencies
 between them. When an application is created from Luminus Template, there are preconfigured components already present,
 including one for the database. The database module in the namespace `tc-demo.db.core` is the one throwing the error we
 saw earlier:
