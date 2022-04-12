@@ -48,9 +48,8 @@ install the preview build with the command `sdk install java 19.ea.5.lm-open`.
 
 ## Install IntelliJ EAP
 
-To experiment with Virtual Threads I am using IntelliJ. As of today the latest version does not yet support the JDK 19
-Early Access builds, but the [EAP Version](https://www.jetbrains.com/idea/nextversion/) does, so I suggest installing it
-to have IDE support for your own experiments.
+To experiment with Virtual Threads I am using IntelliJ. As of today the latest IntelliJ version 2022.1 supports the
+JDK 19 Preview build, so I suggest installing it to have IDE support for your own experiments.
 
 ## Create a project and test it
 
