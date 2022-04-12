@@ -57,12 +57,12 @@ to have IDE support for your own experiments.
 First we have to create a new Java project with IntelliJ. As you can see in the following screenshot I decided to use
 Maven as the build system, the JDK 19 we installed earlier as the JDK. I also defined a project name and a Maven group
 ID and artifact ID:
-![](/assets/20220412/new-project.png)
+![IntelliJs "new project" view with the JDK 19 selected](/assets/20220412/new-project.png)
 
 As Virtual Threads are marked as a Preview Feature, we need the flag `--enable-preview` to both our compile- and
 run-configuration. To tell IntelliJ that it should compile the sources with this flag, we add it to the compiler
 settings as shown in the following screenshot:
-![](/assets/20220412/compiler-settings.png)
+![IntelliJs compiler Preferences with "--enable-preview" as additional command line parameters](/assets/20220412/compiler-settings.png)
 
 Now we can create a new class in our project. I simply called it `VirtualThreadTest`, and the contents are not that
 spectacular:
@@ -92,7 +92,7 @@ Threads.
 
 Before we can run our program, we have to create a run configuration and pass the `--enable-preview` flag upon start:
 
-![](/assets/20220412/run-configuration.png)
+![IntelliJs run configuration with "--enable-preview" as JDK args](/assets/20220412/run-configuration.png)
 
 Now, when we start the program, we can see 20.000 lines of output before the program ends. We have successfully started
 our first ever Virtual Threads, congratulations!
