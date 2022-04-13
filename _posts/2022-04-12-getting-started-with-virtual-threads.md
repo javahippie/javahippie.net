@@ -46,7 +46,7 @@ Virtual Threads are included in the Project Loom Early Access JDK builds, which 
 projects [official site](https://jdk.java.net/loom/). If you have [SDKMAN!](https://sdkman.io) installed, you can
 install the preview build with the command `sdk install java 19.ea.5.lm-open`.
 
-## Install IntelliJ EAP
+## Install the latest IntelliJ version
 
 To experiment with Virtual Threads I am using IntelliJ. As of today the latest IntelliJ version 2022.1 supports the
 JDK 19 Preview build, so I suggest installing it to have IDE support for your own experiments.
