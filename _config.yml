@@ -18,17 +18,17 @@ email: zoeller@hey.com
 description: The Java Hippie
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://javahippie.net" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: javahippie
+twitter_username: javahippie
 github_username:  javahippie
 linkedin_username: timzoeller
 twitch_username: javahippie
-xing_username: Tim_Zoeller2
+#xing_username: Tim_Zoeller2
 youtube_channel: UCFCaMBSbXWg1bfaQ0tUpA-w
 
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-clean-blog
-paginate:           10
+paginate:           15
 paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed
