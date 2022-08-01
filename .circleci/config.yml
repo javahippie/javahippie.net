@@ -15,10 +15,13 @@ jobs:
           command: bundle exec jekyll build
       - run:
           name: Proof
-          command: bundle exec htmlproofer ./_site --check-html --disable-external  --allow_hash_href
+          command: bundle exec htmlproofer ./_site --check-html
+            --disable-external  --allow_hash_href
       - aws-s3/sync:
           from: ./_site
           to: 's3://javahippie-net'
+    # The resource_class feature allows configuring CPU and RAM resources for each job. Different resource classes are available for different executors. https://circleci.com/docs/2.0/configuration-reference/#resourceclass
+    resource_class: large
 
 workflows:
   test-build:
