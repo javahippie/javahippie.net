@@ -21,9 +21,9 @@ url: "https://javahippie.net" # the base hostname & protocol for your site, e.g.
 twitter_username: javahippie
 github_username:  javahippie
 linkedin_username: timzoeller
-twitch_username: javahippie
-#xing_username: Tim_Zoeller2
-youtube_channel: UCFCaMBSbXWg1bfaQ0tUpA-w
+#twitch_username: javahippie
+mastodon_username: javahippie@freiburg.social
+#youtube_channel: UCFCaMBSbXWg1bfaQ0tUpA-w
 
 # Build settings
 markdown: kramdown
