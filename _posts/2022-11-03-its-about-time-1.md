@@ -25,7 +25,7 @@ To understand why we might need a bitemporal database, I'd like to start with an
 financial institution which is required to keep its user data up to date. At the same time, the bank should be able to
 reproduce all documents that were sent out in the past as they were for auditing reasons (in reality this is often done
 in a different way: all old documents are archived, but bear with me for this example 😉). A lot of the customers data
-can change, most common are name chan@ges due to marriage and, of course, address changes. While the bank is required to
+can change, most common are name changes due to marriage and, of course, address changes. While the bank is required to
 keep this data up to date, it's the customers obligation to inform the bank about changes.
 
 For our example, let's get to know our customer, Jay Doe. They are a customer of the Timebank, and are about to get
