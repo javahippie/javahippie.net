@@ -217,10 +217,10 @@ value would be immediately available at the cutoff date.
 
 In the previous section we saw how versioning in the live tables itself worked. It is still somewhat straightforward to
 maintain and discover, but it forces developers to always deal with the concept of time, both when reading and updating
-data. We can build an alternative approach which allows us to keep our old records in a separate table, while only
-holding the current value in the `customer` table. Building and maintaining this abstraction takes a little more effort,
-though, and we need to make use of triggers in the database. First, we re-create the table from our first example and
-add an audit table to it:
+data. We can create a model which is a little easier to access when we concentrate of data at transaction time, not
+about the validity, while only holding the current value in the `customer` table. Building and maintaining this 
+abstraction takes a little more effort, though, and we need to make use of triggers in the database. First, we re-create 
+the table from our first example and add an audit table to it:
 
 ```sql
 create table customer
