@@ -18,10 +18,30 @@ could be recreated exactly as they really were at a certain time. We solved this
 it worked as expected, but it added a lot of overhead to the interaction with the database and made us implement several
 abstractions over the tables. In this short article-series I plan to explain what "bitemporality" is, why we might need
 it, how it can be achieved in different ways in relational databases and wich database products offer special support.
+In this part of the series, we will not see bitemporal functionality, yet. Instead, we will start out without the factor 
+"time" in our model at all and slowly add more capabilities.
+
+*This text was edited on Nov. 4th 2022 to include a better definition of the term bitemporality after some friendly 
+suggestions, thank you very much for the feedback!*
+
+## What is bitemporality?
+
+Whenever a database stores information about time, we can speak of it as a "temporal database". This information is 
+usually one of the following two:
+
+* Transaction time - describing at which time data in a database was recorded
+* Valid time - describing for which timespan data is valid in the real world
+
+We can imagine both as metadata which is represented on an axis which progresses over time. A database which makes use 
+of one of these axes is called a unitemporal database. It provides mechanisms to query this axis, so we can either find
+out what data was stored at a certain point in the past (transaction time) or which data was valid (or will be valid) for
+which timespan (valid time). A bitemporal database utilizes two axes of time simultaneously, which enables us to query 
+data in regard to both transaction time and valid time. To understand why we might need a bitemporal database, I'd like 
+to start with the example below.
 
 ## The usecase
 
-To understand why we might need a bitemporal database, I'd like to start with an example. Imagine you work at a
+Imagine you work at a
 financial institution which is required to keep its user data up to date. At the same time, the bank should be able to
 reproduce all documents that were sent out in the past as they were for auditing reasons (in reality this is often done
 in a different way: all old documents are archived, but bear with me for this example 😉). A lot of the customers data
@@ -34,18 +54,9 @@ Duh" ([thanks to Christoph for the suggestion!](https://mastodon.online/@noctari
 2022-12-01 on. After the wedding, the Duh family immediately starts their honeymoon. Communicating his new name to the
 bank is not one of Jays priorities, but they remember that they have to do this when the bank sends a contract update
 via mail on 2023-01-10, and it contains their old name, Jay Doe. They start the process with their bank advisor at
-Timebank and mails
-in their marriage certificate which proves that they are "Jay Duh" since December 1st 2022.
+Timebank and mails in their marriage certificate which proves that they are "Jay Duh" since December 1st 2022.
 
-In this part of the series, we will not see bitemporal functionality, yet. Instead, we will start out without the
-factor "time" in our model at all and slowly add more capabilities.
-
-## What is bitemporality?
-
-The "bi" in bitemporal database hints at the fact, that for the use case described above we have two different times
-we'd like to track: On one axis we have the validity of the data. In which timespan is the name of our customer valid
-and correct? When did we have to call our customer "Jay Doe" and when "Jay Duh"? On the other axis, we have the state of
-the system at transaction time. When did we know about the name change? In this case, Jay notified the bank on January
+In this case, Jay notified the bank on January
 10th 2023 that their name changed on December 1st 2022. The validity of the new name is now "December 1st 2022 to
 infinity" (or until further changes are made). The transaction time of this information however is January 10th 2023,
 the bank did not know of the change earlier. This might be important, if we have to reproduce the document that was sent
