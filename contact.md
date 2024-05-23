@@ -4,7 +4,6 @@
 
 layout: page
 title: Work with me!
-background: /assets/schluchsee.jpeg
 ---
 
 Starting January 2021, I am open for freelance offers, preferrably working remotely. I can offer 12 years of skills in Java, JavaScript, SQL and web technologies, architecture and Clojure. I also provide trainings on Git, Java, Workflow Engines (Camunda) and Eclipse MicroProfile.

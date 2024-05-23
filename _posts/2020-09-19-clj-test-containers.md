@@ -4,7 +4,6 @@ title:  "Video: Talking about clj test containers with Kevin Wittek"
 date:   2020-09-19 17:30:00 +0200
 author: Tim Zöller
 categories: video clojure cloud
-background: /assets/eichhalde.jpeg
 ---
 
 This Friday, Kevin Wittek, one of the maintainers of Testcontainers, joined me on Twitch to discuss clj-test-containers, a Clojure wrapper I initiated.

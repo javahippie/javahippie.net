@@ -8,89 +8,62 @@
           {% if site.email %}
           <li class="list-inline-item">
             <a href="mailto:{{ site.email | encode_email }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
-              </span>
+              Email
             </a>
           </li>
           {% endif %}
           {% if site.twitter_username %}
           <li class="list-inline-item">
             <a href="https://twitter.com/{{ site.twitter_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
+              Twitter
             </a>
           </li>
           {% endif %}
           {% if site.mastodon_username %}
           <li class="list-inline-item">
             <a rel="me" href="https://freiburg.social/@javahippie">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-mastodon fa-stack-1x fa-inverse"></i>
-              </span>
+              Mastodon
             </a>
           </li>
           {% endif %}
           {% if site.github_username %}
           <li class="list-inline-item">
             <a href="https://github.com/{{ site.github_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-              </span>
+              GitHub
             </a>
           </li>
           {% endif %}
           {% if site.twitch_username %}
           <li class="list-inline-item">
             <a href="https://www.twitch.tv/{{ site.twitch_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitch fa-stack-1x fa-inverse"></i>
-              </span>
+              Twitch
             </a>
           </li>
           {% endif %}
           {% if site.youtube_channel %}
           <li class="list-inline-item">
             <a href="https://www.youtube.com/channel/{{ site.youtube_channel }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
-              </span>
+              YouTube
             </a>
           </li>
           {% endif %}
           {% if site.linkedin_username %}
           <li class="list-inline-item">
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
+              LinkedIn
             </a>
           </li> 
           {% endif %}
           {% if site.xing_username %}
           <li class="list-inline-item">
             <a href="https://www.xing.com/profile/{{ site.xing_username }}">
-              <span class="fa-stack fa-lg">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-xing fa-stack-1x fa-inverse"></i>
-              </span>
+              Xing
             </a>
           </li>
           {% endif %}
 	  <li class="list-inline-item">
              <a href="/feed.xml">
-               <span class="fa-stack fa-lg">
-                 <i class="fas fa-circle fa-stack-2x"></i>
-                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-               </span>
+               RSS Feed
              </a>
            </li>
 

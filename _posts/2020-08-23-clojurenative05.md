@@ -4,7 +4,6 @@ title:  "Cloudready Clojure Part 5"
 date:   2020-08-23 15:00:00 +0200
 author: Tim Zöller
 categories: clojure cloud
-background: /assets/eichhalde.jpeg
 ---
 
 This is part 5 of a series in which I will show some of my approaches to a "Cloud Ready" web application with Clojure. If you are new to web apps with Clojure, you should read the first four parts first: 

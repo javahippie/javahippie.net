@@ -9,7 +9,6 @@ author: Tim Zöller
 
 categories: databases bitemporality
 
-background: /assets/bern.jpeg
 ---
 
 In the past I was part of a project with rather specialized data. It was important to create records in a database that

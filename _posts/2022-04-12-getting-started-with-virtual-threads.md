@@ -9,7 +9,6 @@ author: Tim Zöller
 
 categories: java concurrency
 
-background: /assets/birdo_teppich.jpeg
 ---
 
 This week [JEP 425: Virtual Threads (Preview)](https://twitter.com/OpenJDK/status/1511738132181389320) was moved from

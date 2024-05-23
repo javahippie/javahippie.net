@@ -8,8 +8,6 @@ date: 2024-05-05 20:00:00 +0200
 author: Tim Zöller
 
 categories: artificial-intelligence llm
-
-background: /assets/wrong-way.jpeg
 ---
 
 If you follow me on social media, you know I am deeply sceptical about the benefits of AI in most usecases. I am critical of the environmental impact, I am worried about the centralization on a few SaaS providers and I am sad about the topic dominating every product roadmap, using up ressources which could have been used to progress the products exiting features further. On the other hand I talked about this topic with a lot of smart people this year – and many praised large language models and told me how they made their daily work easier. I'm writing this post, to reflect about my opinion and how arrogant it would be to dismiss peoples first hand experience without second guessing myself. If everybody seems to be a wrong-way driver, it is probably a good idea to check if you are yourself not the one going the wrong way.

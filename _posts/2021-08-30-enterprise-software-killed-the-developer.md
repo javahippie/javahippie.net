@@ -4,7 +4,6 @@ title:  "Enterprise Software Projects killed the Software Developer"
 date:   2021-08-30 12:00:00 +0200
 author: Tim Zöller
 categories: software business
-background: /assets/devilspool.jpeg
 ---
 
 This post was inspired by a comment on HackerNews that I am not able to find anymore. The gist of it was "While architecture is often over-engineered, code itself is often under-engineered". If somebody recognizes the author, I will gladly attribute them. As a disclaimer, this text describes experiences I had in the last 10 years working as a consultant. There might be frameworks and methodologies to counter the issues I am about to describe, but they were either not applied or applied badly.

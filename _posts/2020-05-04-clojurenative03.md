@@ -4,7 +4,6 @@ title:  "Cloudready Clojure Part 3"
 date:   2020-05-04 12:00:00 +0200
 author: Tim Zöller
 categories: clojure cloud
-background: /assets/pontoon.jpeg
 ---
 
 This is part 3 of a series in which I will show some of my approaches to a "Cloud Ready" web application with Clojure. If you are new to web apps with Clojure, you should read the first two parts, [Cloudready Clojure Part 1](/clojure/cloud/2020/04/20/clojurenative01.html) and [Cloudready Clojure Part 2](/clojure/cloud/2020/04/21/clojurenative02.html) first, where we set up a webserver, the base for serverside HTML rendering and a configuration mechanism which will work with cloud providers.

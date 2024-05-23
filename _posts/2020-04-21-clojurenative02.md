@@ -4,7 +4,6 @@ title:  "Cloudready Clojure Part 2"
 date:   2020-04-21 12:00:00 +0200
 author: Tim Zöller
 categories: clojure cloud
-background: /assets/falls.jpeg
 ---
 
 This is part 2 of a series in which I will show some of my approaches to a "Cloud Ready" web application with Clojure. If you are new to web apps with Clojure, you should read the first part, [Cloudready Clojure Part 1](/clojure/cloud/2020/04/20/clojurenative01.html) first, where we set up a webserver and the base for serverside HTML rendering.

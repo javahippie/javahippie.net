@@ -4,7 +4,6 @@ title:  "Starting self employment"
 date:   2020-08-19 20:00:00 +0200
 author: Tim Zöller
 categories: work freelancing
-background: /assets/gruyere.jpeg
 ---
 
 This week, after 6.5 years, I handed in my resignation at ilum:e informatik ag. I decided, that the time has come to follow a wish I held for some time now - to become my own boss. 

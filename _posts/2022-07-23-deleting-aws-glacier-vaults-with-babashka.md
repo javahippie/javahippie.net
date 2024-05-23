@@ -9,7 +9,6 @@ author: Tim Zöller
 
 categories: clojure
 
-background: /assets/feldberg_clouds.jpeg
 ---
 
 Before moving everything to the cloud, a QNAP NAS in my office was my central backup unit. All my devices were synced

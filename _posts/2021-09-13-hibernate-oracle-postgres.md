@@ -4,7 +4,6 @@ title:  "Migrating a JPA application from Oracle to PostgreSQL"
 date:   2021-09-18 09:00:00 +0200
 author: Tim Zöller
 categories: java database jpa hibernate
-background: /assets/baum.jpeg
 ---
 
 

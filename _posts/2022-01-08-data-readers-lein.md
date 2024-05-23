@@ -4,7 +4,6 @@ title:  "Data Readers and Leiningen"
 date:   2022-01-08 10:00:00 +0200
 author: Tim Zöller
 categories: clojure
-background: /assets/tal.jpeg
 ---
 
 For an internal REST-API we are currently experimenting with tagged literals. Creating custom tag readers is not a hard thing to do, but we found ourselves pulling information about the process from different sources, so I decided to write down our findings in this short post.

@@ -4,7 +4,6 @@ title:  "Introducing clj-test-containers, a Testcontainers Wrapper for Clojure"
 date:   2020-06-13 16:10:00 +0200
 author: Tim Zöller
 categories: clojure testcontainers testing
-background: /assets/feldberg.jpeg
 ---
 
 Last week I published a Clojure library which wraps the [Testcontainers Java library](https://www.testcontainers.org/). Please note, that this library is not an official Testcontainers library, but created and maintained by me, with no affiliation to the original project. In this post I will introduce the concepts of Testcontainers, explore the Java library and my Clojure wrapper and show some examples on how to integrate the library in a test suite.

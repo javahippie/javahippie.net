@@ -4,7 +4,6 @@ title:  "Lasagna Driven Development - Thoughts on Layered Architecture"
 date:   2021-10-16 20:00:00 +0200
 author: Tim Zöller
 categories: architecture
-background: /assets/lasagna.jpg
 ---
 
 In the past years, I presented a lot of talks in different environments, in front of different people. Usually I am not really nervous beforehand, but there is one particular talk that made me sweat before the presentations: [Mapping efficiently with SQL](https://app.pitch.com/app/presentation/10ee9dd4-bfce-4e24-a858-0398ebf282a4/3be4ca15-6494-4b61-9e7f-4dfa0ae8125d). The presentation followed an article I wrote for the German "Java Magazin" and was born from the frustration with the thousands of lines of code in software projects which were just there for mapping between different domains in the software. The main idea of the presentation was, that we could leverage SQL to map data directly, a least for database-centric applications. 

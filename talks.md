@@ -4,7 +4,6 @@
 
 layout: page
 title: Talks & Sessions
-background: /assets/hilton.jpeg
 ---
 
 ## Talks & Conference Sessions

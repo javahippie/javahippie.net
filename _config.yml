@@ -28,7 +28,7 @@ mastodon_username: javahippie@freiburg.social
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-clean-blog
-paginate:           15
+paginate:           30
 paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed

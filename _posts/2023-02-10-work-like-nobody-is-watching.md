@@ -9,7 +9,6 @@ author: Tim Zöller
 
 categories: culture
 
-background: /assets/mooswald.jpeg
 ---
 
 In the last months (I started this as a draft in February) there were a lot of news in the tech industry. While most of them were related to layoffs or personal

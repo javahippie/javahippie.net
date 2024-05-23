@@ -4,7 +4,6 @@ title:  "A rant on bad leadership"
 date:   2021-04-07 19:00:00 +0200
 author: Tim Zöller
 categories: leadership rant
-background: /assets/leash.jpeg
 ---
 
 ## Why am I angry?

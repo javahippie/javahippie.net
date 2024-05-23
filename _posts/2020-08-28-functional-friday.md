@@ -4,7 +4,6 @@ title:  "Video: Functional Friday 1"
 date:   2020-08-28 12:05:00 +0200
 author: Tim Zöller
 categories: video clojure cloud
-background: /assets/eichhalde.jpeg
 ---
 
 Today I started a small streaming series on Twitch: Functional Friday. Every Friday at lunch time (for Germany) I will stream 30 minutes of work on a small Clojure web app, which will be able to run scaled in the cloud. Every video will be archived on my YouTube channel (see in social links below), in case you missed it or want to watch it later.

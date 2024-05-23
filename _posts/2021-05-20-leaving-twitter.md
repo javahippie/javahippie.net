@@ -4,7 +4,6 @@ title:  "Leaving Twitter"
 date:   2021-05-20 12:00:00 +0200
 author: Tim Zöller
 categories: self
-background: /assets/leaving.jpeg
 ---
 
 ## So long and thanks for all the fish

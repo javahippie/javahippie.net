@@ -4,7 +4,6 @@
 
 layout: page
 title: About me
-background: /assets/dausenau.jpeg
 ---
 
 # Passionate about software!

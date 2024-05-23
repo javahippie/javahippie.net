@@ -9,7 +9,6 @@ author: Tim Zöller
 
 categories: clojure
 
-background: /assets/javaland.jpeg
 ---
 
 I have already written some posts on this blog about

@@ -9,7 +9,6 @@ author: Tim Zöller
 
 categories: data
 
-background: /assets/guitars.jpeg
 ---
 
 This week I read [a (German) article](https://www.visions.de/features/kolumnen-und-rubriken/rage-against-the-patriarchy/rage-against-the-patriarchy-altersdiskriminierung/) about female rock musicians age discrimination.

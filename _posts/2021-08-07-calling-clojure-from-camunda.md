@@ -4,7 +4,6 @@ title:  "Calling Clojure code from Camunda"
 date:   2021-08-07 10:00:00 +0200
 author: Tim Zöller
 categories: clojure camunda
-background: /assets/birdo_sofa.jpeg
 ---
 
 Since the beginning of the year, the parts of my daily work that are related to Camunda, an Open Source Workflow management Platform from Berlin, have grown a lot. I don't only use it in Java projects, I also started giving Camunda Trainings for Java Developers. As the Camunda engine is basically just a Java library, it can be used from Clojure, too. In 2019 I had the chance to present the combination at the amazing :clojureD conference. I was more than a little nervous to present one of my firsts conference talks, ever, at my favorite tech conference. You don't need to know the talk to read further, but here is the video for reference: 

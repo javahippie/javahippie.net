@@ -9,7 +9,6 @@ author: Tim Zöller
 
 categories: clojure mastodon
 
-background: /assets/vogesen.jpeg
 ---
 
 If you visit this site, it is possible that you fell for some clickbait! No worries, this is just a small script I

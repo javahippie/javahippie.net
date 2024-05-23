@@ -4,7 +4,6 @@ title:  "Book giveaway"
 date:   2021-08-11 18:00:00 +0200
 author: Tim Zöller
 categories: self
-background: /assets/schluchsee-pano.jpeg
 ---
 
 I skimmed through my growing collection of tech- and other non-fiction-books and realized, that it contains a good amount of books that I won't ever read again. Maybe it is a chance to pass some of them on to people who maybe can not afford that many books. Let's have a little experiment.

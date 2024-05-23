@@ -4,7 +4,6 @@ title:  "Finding my inner Wes Anderson with Babashka"
 date:   2021-10-18 18:00:00 +0200
 author: Tim Zöller
 categories: clojure
-background: /assets/ibis.jpg
 ---
 
 I have found a new toy, and its name is [babashka](https://github.com/babashka/babashka). Babashka is a "Native, fast starting Clojure interpreter for scripting" by [Michiel Borkent](https://github.com/borkdude). This scripting environment packages a lot of Clojure goodness, is precompiled with GraalVM to a native binary, resulting in incredibly fast startup time. It enables developers to execute Clojure code immediately. So of course I am currently not only in the process of migrating some parts of our build pipeline to babashka, I am also writing some nonsensical scripts for fun – be it a script to [publish my current track playing in Apple Music to Slack](https://github.com/javahippie/slack-the-music), a small script to set my Desktop wallpaper to NASAs picture of the day, or other small stuff that makes me happy. This blog post is about me finding my prettiest pictures with babashka.

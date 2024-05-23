@@ -4,7 +4,6 @@ title:  "Tracing Clojure code with alter-var-root"
 date:   2021-05-29 14:00:00 +0200
 author: Tim Zöller
 categories: clojure apm
-background: /assets/trace.jpeg
 ---
 
 ## Tracing - again!

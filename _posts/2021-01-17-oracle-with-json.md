@@ -4,7 +4,6 @@ title:  "Efficient JSON with Oracle Database"
 date:   2021-01-17 10:00:00 +0200
 author: Tim Zöller
 categories: sql database oracle
-background: /assets/rossi.jpeg
 ---
 
 While working with a customer, a usecase came up that was hard to implement with a relational database (due to NDA, I cannot share the usecase itself). It was necessary to store some information for every row in the Oracle database, but although the structure of the data was similar, it contained a lot of special cases and different hierarchies. It would have been possible, with a clever table structure und a bit of denormalization. In fact, we did a PoC with a relational model, but it soon turned out that reads were slow and the queries to filter by this data grew more and more complex. There were good and productive discussions about the best approaches, and at some point, somebody said "This would be a good usecase for a document DB, wouldn't it?". Unfortunately, installing infrastructure for this was out of the picture, as the customer did not have experience with this technology and we were not keen on maintaining even more infrastructure, but we agreed on creating another PoC with the whole hierarchy being stored as a JSON in Oracle DB. The PoC was successful and the solution is productive and performing well.

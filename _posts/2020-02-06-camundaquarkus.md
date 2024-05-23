@@ -4,7 +4,6 @@ title:  "Running Camunda on Quarkus"
 author: Tim Zöller
 date:   2020-02-07 12:00:00 +0200
 categories: java microprofile quarkus camunda cdi
-background: /assets/perth.jpeg
 ---
 
 A customer asked me to review if the Camunda BPM engine can be used with Quarkus on the JVM. Before we dive into the technical part of this article, I would like to say that I would not recommend doing this right now. I love working with Quarkus, but if you plan to use libraries outside of the Quarkus extensions, you are completely on your own. If you plan to use CDI, be aware that the Quarkus ArC CDI implementation is not fully CDI compatible - as we will see later. If you need to run Camunda in production, you should stick to proven technology. We also won't take a look at running Camunda as native image.

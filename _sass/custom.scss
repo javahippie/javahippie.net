@@ -2,6 +2,36 @@
  max-width: 90%;
 }
 
+header.masthead .post-heading,
+header.masthead .page-heading {
+ padding-top: 100px;
+ padding-bottom: 12px;
+ text-align: center;
+}
+
+header.masthead,
+header.masthead .page-heading {
+ background-color: white;
+ color: black;
+ margin-bottom: 12px;
+
+}
+
+header.masthead .overlay {
+ background-color: white;
+}
+
+
+header.masthead .post-heading,
+header.masthead .post-heading .meta a,
+#mainNav .navbar-brand,
+#mainNav .navbar-brand:hover,
+#mainNav .navbar-nav > li.nav-item > a,
+#mainNav .navbar-nav > li.nav-item > a:hover
+{
+ color: black;
+}
+
 div.container img {
  max-width: 100%;
 }

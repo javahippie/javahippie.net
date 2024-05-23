@@ -6,7 +6,6 @@
 
 layout: page
 title: Mastodon Test
-background: /assets/kanonenplatz-schnee.jpeg
 ---
 
 This is a test page. If you see a preview of it on Mastodon, please boost the post that shows it. 

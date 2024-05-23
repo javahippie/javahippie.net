@@ -4,7 +4,6 @@ title:  "APM with honeycomb.io in Clojure"
 date:   2021-01-30 23:30:00 +0200
 author: Tim Zöller
 categories: clojure apm monitoring
-background: /assets/biene.jpg
 ---
 
 I am still in the process of founding my own company, lambdaschmiede GmbH, currently struggling against the legendary and rampant bureaucracy in Germany. While bootstrapping the company with consulting, my mid-term goal is to provide and sell my own software products - and it should come as no surprise that I plan to create them with Clojure. This is a good reason for me to think about running, operating and monitoring Clojure web applications. One important topic for me is monitoring. How many requests hit the application per minute? Are there peaks? Which services consume the most time, which services response times were increased after the latest deployment? Which database calls are too slow? 
