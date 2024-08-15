@@ -10,7 +10,7 @@ author: Tim Zöller
 categories: java spring
 ---
 
-When writing unit tests, we expect the classes under test to be in a certain state that we can set up in our test. A dynamic state, which is initialised in the class itself, makes our unit testing life much harder. In this short post I will share my approach to making classes use `LocalDateTime.now()` to get the current date time more testable in a Spring Boot application.
+When writing unit tests, we expect the classes under test to be in a certain state that we can set up in our test. A dynamic state, which is initialised in the class itself, makes our unit testing life much harder. In this short post I will share my approach to make classes using `LocalDateTime.now()` more testable in a Spring Boot application.
 
 ## The issue
 We want to write a unit test for the following class:
@@ -63,7 +63,7 @@ public class PostValidatorServiceTest() {
 
 We ignore the fact that this is not a good way to write a validator, and that the method could be placed on the `Post` class itself instead of writing a validator to the class instead. Instead, we will look at the test setup and notice that it is not very declarative. We initialise our `Post` instance with a date time that is exactly one day in the past or one day in the future, depending on what we want to test. 
 
-This shows our intent, but prevents us from testing edge cases. What if `minusDays(1)` puts our date time in the previous month? The previous year? What if it is a leap year? What if the clocks have changed to daylight saving time? We cannot set up a test to answer these questions. If the tests are run at times that involve these edge cases, they may randomly fail and become flaky as well.
+This shows our intent, but prevents us from testing edge cases. What if `minusDays(1)` puts our date time in the previous month? The previous year? What if it is a leap year? What if the clocks have changed to daylight saving time? We cannot set up a test to answer these questions. If the tests are run at times that involve these edge cases, they may randomly fail.
 
 ## The naive solution
 We could decide to add the value of `now()` to the method signature:
