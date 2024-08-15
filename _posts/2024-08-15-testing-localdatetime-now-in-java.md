@@ -46,7 +46,7 @@ public class PostValidatorServiceTest() {
     
     @Test
     void testInvoiceDateIsInvalid() {
-            PostValidatorService testee = new PostValidatorService();
+        PostValidatorService testee = new PostValidatorService();
         
         Post post = new Post();
         post.setPostCreationTime(LocalDateTime.now().plusDays(1));
