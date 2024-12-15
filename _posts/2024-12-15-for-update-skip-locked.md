@@ -86,7 +86,7 @@ Since the instance discussed in this thread was running on PostgreSQL I was [rea
 
 > With SKIP LOCKED, any selected rows that cannot be immediately locked are skipped. Skipping locked rows provides an inconsistent view of the data, so this is not suitable for general purpose work, but can be used to avoid lock contention with multiple consumers accessing a queue-like table. 
 
-This sounded like exactly what we needed: Every query to the job executor table now omits rows which are already locked from the result set, and if an Operaton instance wants to query 10 jobs for execution, they will retrieve the next 10 jobs which are already locked. In a quickly hacked Camunda instance, Jean Robert was [able to confirm performance improvments from 40 minutes down to 16 minutes](https://forum.operaton.org/t/job-execution-rejected/68/50?u=javahippie).
+This sounded like exactly what we needed: Every query to the job executor table now omits rows which are already locked from the result set, and if an Operaton instance wants to query 10 jobs for execution, they will retrieve the next 10 jobs which are already locked. In a quickly hacked Camunda instance, Jean Robert was [able to confirm performance improvments from 40 minutes down to 16 minutes](https://forum.operaton.org/t/job-execution-rejected/68/50?u=javahippie). The same syntax also works for MariaDB, MySQL and Oracle DB.
 
 
 ## Implementing the feature in Operaton
@@ -94,7 +94,7 @@ I started implementing this feature in Operaton, you can already try it out by b
 
 The two questions we need to answer before including this as an (opt in) feature for the engine for everybody are:
 
-* Some supported databases don't support this syntax, IBM DB2 and MSSQL. Is there another way to achieve this, or will users of those databases be left out?
+* Some supported databases don't support this syntax, IBM DB2 and MSSQL. Is there another way to achieve this, or will users of those databases be left out? DB2s "SKIP LOCKED DATA" clause and MS SQLs "UPDLOCK / READPAST" feature look similar, but need to be evaluated.
 * Testing, testing, testing. While we plan to create a feature flag to enable this behavior, we need to make sure it provides the quality a process engine needs
 
 I'm looking forward to receive feedback from people using this feature in real-world settings and I'd be excited if this feature made the engine perform better for certain usecases.
