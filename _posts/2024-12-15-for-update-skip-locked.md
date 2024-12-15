@@ -3,7 +3,7 @@ layout: post
 
 title: "Tuning the Operaton (or Camunda) Job Executor with SQL"
 
-date: 2024-15-07 15:00:00 +0200
+date: 2024-12-15 15:00:00 +0200
 
 author: Tim Zöller
 
