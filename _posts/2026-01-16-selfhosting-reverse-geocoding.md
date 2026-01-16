@@ -54,9 +54,9 @@ To import the data into a running PostGIS database I used the `ogr2ogr` Tool pro
 
 ```shell
 ogr2ogr -nln public.gadm_410 \
-        -lco GEOMETRY_NAME=geom \ 
-        -lco FID=fid \ 
-        -f PostgreSQL PG:"host=localhost port=5432 dbname=testdb user=test password=test" \ 
+        -lco GEOMETRY_NAME=geom \
+        -lco FID=fid \
+        -f PostgreSQL PG:"host=localhost port=5432 dbname=testdb user=test password=test" \
         -progress  \
         gadm_410.gpkg      
 ```
@@ -185,8 +185,8 @@ unzip gadm_410-gpkg.zip
 ogr2ogr -nln public.gadm_410 \
         -lco GEOMETRY_NAME=geom \
         -lco FID=fid \
-        -skipfailures \ 
+        -skipfailures \
         -f PostgreSQL PG:"host=localhost port=5432 dbname=testdb user=test password=test" \
-        -progress  \
+        -progress \
         gadm_410.gpkg
 ```
