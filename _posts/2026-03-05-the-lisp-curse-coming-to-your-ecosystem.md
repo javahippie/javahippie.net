@@ -16,7 +16,7 @@ The LISP curse is often quoted as the reason why so few libraries and reusable c
 I was drawn into several discussions this week where people claimed that with the ease and quality of Large Language Models, it is now easier and cheaper to generate code than to use existing abstractions like frameworks or libraries. If we ignore the fact that established libraries are incredibly stable, tested by hundreds of thousands of developers, included in thousands of CI pipelines and maintained by experts on the topic, if we accept the assumption that it is easier to let an LLM generate functionality than to learn the interfaces of existing libraries and frameworks (or let the LLM integrate these libraries or frameworks), what would the implications for language ecosystems like Java's look like?
 
 ## More isolation, more individualism, less collaboration
-Nevertheless, a lot of people contributed to the success of Open Source ecosystems in the last decades through collaboration, collective problem solving and with the goal of solving hard problems. 
+A lot of people contributed to the success of Open Source ecosystems in the last decades through collaboration, collective problem solving and with the goal of solving hard problems. 
 
 The first effect of the aforementioned scenario would be the decline of people using the open source libraries, reducing feedback to the maintainers. If I could just solve my problems with one or two prompts, 20 minutes of waiting time and a couple of dollars worth of tokens, why should I bother with research? Why should I bother with the API decisions other people made? Why should I bother with reading documentation? 
 
