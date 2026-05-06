@@ -25,6 +25,11 @@ twitch_username: javahippie
 mastodon_username: javahippie@mainz.social
 #youtube_channel: UCFCaMBSbXWg1bfaQ0tUpA-w
 
+collections:
+  posts_de:
+    output: true
+    permalink: /de/:categories/:year/:month/:day/:title:output_ext
+
 # Build settings
 markdown: kramdown
 theme: jekyll-theme-clean-blog
