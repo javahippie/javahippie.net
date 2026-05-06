@@ -39,6 +39,18 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts_de"
+    values:
+      lang: "de"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      lang: "en"
+
 exclude:
   - Gemfile
   - Gemfile.lock
