@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: "Fake sign-ups with "Automated protocol deliverability probe": what we did on mainz.social"
+title: "Fake sign-ups with 'Automated protocol deliverability probe': Countermeasures"
 
 date: 2026-09-11 22:10:00 +0200
 
