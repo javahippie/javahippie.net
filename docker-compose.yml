@@ -2,6 +2,6 @@ services:
   jekyll:
     image: bretfisher/jekyll-serve:stable-20260315-2119a31
     volumes:
-      - .:/site
+      - .:/site:z
     ports:
       - '4000:4000'

@@ -4,3 +4,8 @@ _site/
 .jekyll-metadata
 .DS_Store
 /.idea/
+
+# Emacs
+*~
+\#*\#
+.#*
