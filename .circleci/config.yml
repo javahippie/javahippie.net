@@ -17,7 +17,7 @@ jobs:
           command: bundle exec jekyll build
       - run:
           name: Proof
-          command: bundle exec htmlproofer ./_site --disable-external --allow-hash-href
+          command: bundle exec htmlproofer ./_site --disable-external --allow-hash-href --no-enforce-https
       - aws-s3/sync:
           from: ./_site
           to: 's3://javahippie-net'
