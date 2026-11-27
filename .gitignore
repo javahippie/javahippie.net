@@ -1,7 +1,9 @@
 _site/
+_capsule/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+.certificates/
 .DS_Store
 /.idea/
 

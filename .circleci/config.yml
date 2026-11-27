@@ -12,6 +12,14 @@ jobs:
       - checkout
       - ruby/install-deps:
           key: ruby-cache-{{checksum "Gemfile"}}
+      - restore_cache:
+          key: html2gmi-v1
+      - run:
+          name: Install md2gemini
+          command: |
+            sudo apt-get update && sudo apt-get install -y pipx
+            pipx install md2gemini
+            echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$BASH_ENV"
       - run:
           name: Build
           command: bundle exec jekyll build
